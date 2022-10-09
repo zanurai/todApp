@@ -1,0 +1,119 @@
+:root {
+    --dark: rgb(119, 218, 243);
+    --darker: rgb(35, 71, 85);
+    --darkest: rgb(20, 39, 46);
+    --gray: gray;
+    --purple: purple;
+    --pink: rgb(230, 84, 205);
+    --red: red;
+    --light: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    appearance: none;
+}
+
+.texts {
+    font-size: 25px;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: var(--darker);
+}
+
+header h1 {
+    font-size: 40px;
+    color: var(--gray);
+    margin-top: 100px;
+}
+
+#new-app {
+    margin-top: 30px;
+}
+
+#new-app #new-text {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.325rem;
+    padding-left: 30px;
+    background: var(--dark);
+}
+
+#new-app #new-submit {
+    width: 15%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    background: linear-gradient(var(--pink), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+main {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.app h2 {
+    color: var(--gray);
+}
+
+.todoApp {
+    background: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.todoApp .content .text {
+    font-size: 25px;
+    padding-left: 20px;
+    color: var(--gray);
+}
+
+button {
+    background: none;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+.action button {
+    margin-right: 20px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.action .edit {
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(var(--purple), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.action .delete {
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--purple);
+}
